@@ -16,7 +16,9 @@ app.use(bodyParser.urlencoded({ //to parse the data recieved with api
     extended:true
 }));
 
-mongoose.connect("mongodb://localhost:27017/loan") //database url (mongodb)
+//mongoose.connect("mongodb://localhost:27017/loan") //database url (mongodb)
+mongoose.connect("mongodb+srv://skc3766:1234@cluster0.wsew7.mongodb.net/loan?retryWrites=true&w=majority")
+
 
 const loanSchema={
     Name:String,
